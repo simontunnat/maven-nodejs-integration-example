@@ -1,0 +1,21 @@
+{
+  "name": "maven-nodejs-integration",
+  "version": "1.0.0-SNAPSHOT",
+  "description": "Mave Node.js Integration Test",
+  "repository": "https://github.com/simontunnat/maven-nodejs-integration",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Simon Tunnat",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
