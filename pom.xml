@@ -56,9 +56,7 @@
             </executions>
 
             <configuration>
-              <nodeVersion>v4.6.0</nodeVersion>
-              <npmVersion>2.15.9</npmVersion>
-              <installDirectory>${project.build.directory}/frontend</installDirectory>
+              <nodeVersion>v8.12.0</nodeVersion>
             </configuration>
           </plugin>
         </plugins>
