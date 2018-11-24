@@ -56,7 +56,7 @@
             </executions>
 
             <configuration>
-              <nodeVersion>v8.12.0</nodeVersion>
+              <nodeVersion>v10.13.0</nodeVersion>
             </configuration>
           </plugin>
         </plugins>
