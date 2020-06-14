@@ -1,8 +1,8 @@
 {
-  "name": "maven-nodejs-integration",
+  "name": "maven-nodejs-integration-example",
   "version": "1.0.0-SNAPSHOT",
-  "description": "Mave Node.js Integration Test",
-  "repository": "https://github.com/simontunnat/maven-nodejs-integration",
+  "description": "Maven Node.js Integration Example",
+  "repository": "https://github.com/simontunnat/maven-nodejs-integration-example",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

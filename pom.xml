@@ -11,12 +11,12 @@
   </parent>
 
   <groupId>org.tunnat.maven</groupId>
-  <artifactId>nodejs-test</artifactId>
+  <artifactId>nodejs-integration-example</artifactId>
   <version>${revision}</version>
   <packaging>pom</packaging>
   <name>${project.groupId}:${project.artifactId}</name>
-  <description>Maven Node.js Integration Test</description>
-  <url>https://github.com/simontunnat/maven-nodejs-integration</url>
+  <description>Maven Node.js Integration Example</description>
+  <url>https://github.com/simontunnat/maven-nodejs-integration-example</url>
 
   <licenses>
     <license>
