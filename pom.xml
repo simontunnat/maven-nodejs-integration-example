@@ -1,64 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.tunnat.maven</groupId>
-    <artifactId>nodejs-test</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>${project.groupId}:${project.artifactId}</name>
-    <description>Maven Node.js Integration Test</description>
-    <url>https://github.com/simontunnat/maven-nodejs-integration</url>
+  <parent>
+    <groupId>org.tunnat</groupId>
+    <artifactId>maven-parent</artifactId>
+    <version>2006.2</version>
+  </parent>
 
-    <licenses>
-        <license>
-            <name>Apache-2.0</name>
-            <url>https://opensource.org/licenses/Apache-2.0</url>
-        </license>
-    </licenses>
+  <groupId>org.tunnat.maven</groupId>
+  <artifactId>nodejs-test</artifactId>
+  <version>${revision}</version>
+  <packaging>pom</packaging>
+  <name>${project.groupId}:${project.artifactId}</name>
+  <description>Maven Node.js Integration Test</description>
+  <url>https://github.com/simontunnat/maven-nodejs-integration</url>
 
-    <developers>
-        <developer>
-            <name>Simon Tunnat</name>
-            <email>simon@tunn.at</email>
-        </developer>
-    </developers>
+  <licenses>
+    <license>
+      <name>Apache-2.0</name>
+      <url>https://opensource.org/licenses/Apache-2.0</url>
+    </license>
+  </licenses>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+  <developers>
+    <developer>
+      <name>Simon Tunnat</name>
+      <email>simon@tunn.at</email>
+    </developer>
+  </developers>
 
-    <build>
-        <plugins>
-          <plugin>
-            <groupId>com.github.eirslett</groupId>
-            <artifactId>frontend-maven-plugin</artifactId>
-            <version>1.6</version>
+  <properties>
+    <revision>1.0-SNAPSHOT</revision>
+  </properties>
 
-            <executions>
-              <execution>
-                <id>install-node-and-npm</id>
-                <goals>
-                  <goal>install-node-and-npm</goal>
-                </goals>
-              </execution>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
 
-              <execution>
-                <id>npm-install</id>
-                <goals>
-                  <goal>npm</goal>
-                </goals>
-              </execution>
-            </executions>
+        <executions>
+          <execution>
+            <id>install-node-and-npm</id>
+            <goals>
+              <goal>install-node-and-npm</goal>
+            </goals>
+          </execution>
 
+          <execution>
+            <id>npm-install</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+          </execution>
+
+          <execution>
+            <id>npm-build</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
             <configuration>
-              <nodeVersion>v10.13.0</nodeVersion>
+              <arguments>run-script build</arguments>
             </configuration>
-          </plugin>
-        </plugins>
-    </build>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
