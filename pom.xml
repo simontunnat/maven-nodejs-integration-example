@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.tunnat</groupId>
     <artifactId>maven-parent</artifactId>
-    <version>2006.2</version>
+    <version>2011.0</version>
   </parent>
 
   <groupId>org.tunnat.maven</groupId>
