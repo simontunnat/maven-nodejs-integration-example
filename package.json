@@ -12,8 +12,9 @@
   "author": "Simon Tunnat",
   "license": "Apache-2.0",
   "devDependencies": {
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "html-webpack-plugin": "^4.5.2",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "lodash": "^4.17.21"
