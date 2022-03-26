@@ -5,7 +5,7 @@
 This is an example for how to run Node.js as part of the a Maven build.
 
 ## Requirements
-* Java Version 8 or later (the project is build against JDK 8, 11 and 16)
+* Java Version 8 or later (the project is build against JDK 8, 11 and 17)
 
 ## Usage
 Execute the following command:
